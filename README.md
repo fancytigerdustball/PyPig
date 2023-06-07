@@ -16,7 +16,7 @@ igpay atinlay
 python
 ```
 
-Note! pigify and depigify will ignore any characters that aren't alphabetical.
+Note! pigify and depigify will ignore any characters that aren't alphabetical and make all letters lower-case
 
 ```
 >>> print(pl.pigify('I play 2048'))
