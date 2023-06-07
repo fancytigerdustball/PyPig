@@ -1,5 +1,7 @@
 ''' PyPig '''
 
+VOWELS = list('aeiou')
+
 def _get_words(text):
     ''' Returns the words in the text '''
 
@@ -30,6 +32,8 @@ def pigify(text):
     platin = ''
     for word in words:
         first = word[0]
+        if first in VOWELS:
+            first = 'y'
         word = word[1:] + first + 'ay'
         platin += word + ' '
 
